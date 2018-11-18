@@ -1,0 +1,449 @@
+{
+	"info": {
+		"_postman_id": "898c0303-a85d-43aa-8d88-1f4e368e0a28",
+		"name": "Current weather",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "by valid city name ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?APPID=397a53124ef985b13ed03958b3fb5e48&q=Kiev",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "APPID",
+							"value": "397a53124ef985b13ed03958b3fb5e48"
+						},
+						{
+							"key": "q",
+							"value": "Kiev"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "by invalid city name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?APPID=397a53124ef985b13ed03958b3fb5e48&q=Kievv",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "APPID",
+							"value": "397a53124ef985b13ed03958b3fb5e48"
+						},
+						{
+							"key": "q",
+							"value": "Kievv"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "by valid city ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?APPID=397a53124ef985b13ed03958b3fb5e48&id=707860",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "APPID",
+							"value": "397a53124ef985b13ed03958b3fb5e48"
+						},
+						{
+							"key": "id",
+							"value": "707860"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "by invalid city ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?APPID=397a53124ef985b13ed03958b3fb5e48&id=70786",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "APPID",
+							"value": "397a53124ef985b13ed03958b3fb5e48"
+						},
+						{
+							"key": "id",
+							"value": "70786"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "by several cities name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?APPID=397a53124ef985b13ed03958b3fb5e48&q=New York&q=Kharkiv&q=Lviv",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "APPID",
+							"value": "397a53124ef985b13ed03958b3fb5e48"
+						},
+						{
+							"key": "q",
+							"value": "New York"
+						},
+						{
+							"key": "q",
+							"value": "Kharkiv"
+						},
+						{
+							"key": "q",
+							"value": "Lviv"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "by valid lat and lon",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?APPID=397a53124ef985b13ed03958b3fb5e48&lon=30&lat=50",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "APPID",
+							"value": "397a53124ef985b13ed03958b3fb5e48"
+						},
+						{
+							"key": "lon",
+							"value": "30"
+						},
+						{
+							"key": "lat",
+							"value": "50"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "invalid lat and lon",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?APPID=397a53124ef985b13ed03958b3fb5e48&lon=3000&lat=5000",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "APPID",
+							"value": "397a53124ef985b13ed03958b3fb5e48"
+						},
+						{
+							"key": "lon",
+							"value": "3000"
+						},
+						{
+							"key": "lat",
+							"value": "5000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "by valid zip, country code",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "by valid zip and without country code",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?APPID=397a53124ef985b13ed03958b3fb5e48&zip=84401",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "APPID",
+							"value": "397a53124ef985b13ed03958b3fb5e48"
+						},
+						{
+							"key": "zip",
+							"value": "84401"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "by valid zip, invalid country code",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?APPID=397a53124ef985b13ed03958b3fb5e48&zip=84401,cc",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "APPID",
+							"value": "397a53124ef985b13ed03958b3fb5e48"
+						},
+						{
+							"key": "zip",
+							"value": "84401,cc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "by valid coordinate rectangle",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/box/city?APPID=397a53124ef985b13ed03958b3fb5e48&bbox=-90,34,-89,35,20",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"box",
+						"city"
+					],
+					"query": [
+						{
+							"key": "APPID",
+							"value": "397a53124ef985b13ed03958b3fb5e48"
+						},
+						{
+							"key": "bbox",
+							"value": "-90,34,-89,35,20"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "by valid coordinate circle",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/find?lat=55.5&lon=37.5&cnt=10&appid=397a53124ef985b13ed03958b3fb5e48",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"find"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "55.5"
+						},
+						{
+							"key": "lon",
+							"value": "37.5"
+						},
+						{
+							"key": "cnt",
+							"value": "10"
+						},
+						{
+							"key": "appid",
+							"value": "397a53124ef985b13ed03958b3fb5e48"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "by valid language",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	]
+}
